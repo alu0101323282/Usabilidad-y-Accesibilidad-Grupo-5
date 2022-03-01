@@ -10,8 +10,8 @@ Para este ejercicio se propondrá el prototipo de una aplicación web para una t
 
 - Diseño - Conceptual:
   - Perfiles de usuario:
-   - Jóvenes estudiantes de entre 18 y 25 años, con poco poder adquisitivo, en busca de ropa de calidad a bajo precio que poder comprar desde cualquier lugar.
-   - Adultos de entre 30 y 45 años, casados, con hijos y con estabilidad económica, buscando un servicio fácil, rápido y fiable para la compra de ropa de la familia.
+    - Jóvenes estudiantes de entre 18 y 25 años, con poco poder adquisitivo, en busca de ropa de calidad a bajo precio que poder comprar desde cualquier lugar.
+    - Adultos de entre 30 y 45 años, casados, con hijos y con estabilidad económica, buscando un servicio fácil, rápido y fiable para la compra de ropa de la familia.
   - Personajes:
 
 
