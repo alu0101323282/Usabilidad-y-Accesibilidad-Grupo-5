@@ -1,0 +1,44 @@
+body {
+    width: 770px;
+    font-family: Arial;
+    color: black;
+    size: 1.5em;
+}
+#cabecera {
+    padding: 10px;
+    height: 100px;
+    background-image: url(cabecera.jpg);   
+}
+#cabecera input {
+    height: 80px;
+    width: 200px;
+    background-color: rgb(179,57,81);
+    color: white;
+    padding: 1em 2em;
+    margin: 10px 20px;
+    border:1px solid black;
+}
+  
+#cabecera input:hover {
+    background-color: rgb(66, 28, 40);
+    color: white;
+}
+
+#columna-izq{
+    float: left;
+    width: 340px;
+    background-color: coral;
+}
+#columna-centro{
+    float: left;
+    width: 300px;
+    background-color: green;
+}
+#columna-der{
+    float: left;
+    width: 130px;
+    background-color: red;
+}
+#pie-pagina{
+    background-color: yellow;
+}
