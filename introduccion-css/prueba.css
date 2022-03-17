@@ -7,18 +7,19 @@ body {
 #cabecera {
     padding: 10px;
     height: 100px;
+    width: 750px;
     background-image: url(cabecera.jpg);   
 }
 #cabecera input {
     height: 80px;
-    width: 200px;
+    width: 140px;
     background-color: rgb(179,57,81);
     color: white;
     padding: 1em 2em;
     margin: 10px 20px;
     border:1px solid black;
 }
-  
+
 #cabecera input:hover {
     background-color: rgb(66, 28, 40);
     color: white;
@@ -27,7 +28,30 @@ body {
 #columna-izq{
     float: left;
     width: 340px;
+    height: 1500px;
     background-color: coral;
+}
+#Invierno{
+  background-color:burlywood;
+}
+#Pantalones{
+  float:left;
+  width: 165;
+}
+#Chaquetas{
+  float:right;
+  width: 165;
+}
+#pantalones{
+  height: 300;
+  width: 160;
+}
+#chaquetas{
+  height: 300;
+  width: 160;
+}
+#calorica{
+  background-color:burlywood;
 }
 #columna-centro{
     float: left;
@@ -40,5 +64,6 @@ body {
     background-color: red;
 }
 #pie-pagina{
+
     background-color: yellow;
 }
