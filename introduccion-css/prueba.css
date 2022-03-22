@@ -1,0 +1,92 @@
+body {
+    width: 770px;
+    font-family: Arial;
+    color: black;
+    size: 1.5em;
+}
+a {
+  margin: 0.7em;
+  color: blue;
+}
+a:hover {
+  color: red;
+}
+a:visited {
+  color: blue;
+}
+table, th, td {
+  margin: 0.7em;
+  border:1px solid black;
+}
+table a {
+  color: green;
+}
+p {
+  margin: 0.5em;
+}
+h1, h2, h3 {
+  margin: 7px;
+}
+
+#cabecera {
+    height: 100px;
+    width: 770px;
+    background-image: url(cabecera.jpg);  
+}
+#cabecera input {
+    height: 80px;
+    width: 140px;
+    background-color: navy;
+    color: white;
+    padding: 0.3em;
+    margin: 0.7em;
+}
+#cabecera input:hover {
+    background-color: black;
+}
+
+#columna-izq{
+    float: left;
+    width: 336px;
+    height: 1050px;
+    border:1px solid black;
+}
+
+#columna-centro{
+    float: left;
+    width: 298px;
+    height: 1050px;
+    border:1px solid black;
+}
+
+#columna-centro input{
+  height: 30px;
+  width: 60px;
+  background-color: rgb(179, 122, 57);
+  color: white;
+  padding: 0.3em;
+  margin-bottom: 0.7em;
+  margin-left: 0.7em;
+  border:1px solid black;
+}
+
+#columna-centro input:hover{  
+  background-color: rgb(114, 88, 33);
+  color: white;
+}
+
+#columna-der{
+    float: left;
+    width: 130px;
+    height: 1050px;
+    border:1px solid black;
+}
+
+#columna-der a{
+  margin: 1em;;
+}
+
+#pie-pagina{
+  border:1px solid black;
+  width: 768px;
+}
