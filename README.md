@@ -1,6 +1,6 @@
 ## __Seminario DCU__
 
-2.-Aplicar el DCU para la realización de un prototipo de una aplicación web.
+2.-Aplicar el DCU para la realización de un prototipo de una aplicación web. 
 
 Para este ejercicio se propondrá el prototipo de una aplicación web para una tienda de ropa.
 
