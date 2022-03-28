@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    color: black;
+}
+table, th, td {
+  margin: 0.7em;
+}
+
+p {
+  margin: 0.5em;
+}
+h1, h2, h3 {
+  margin: 7px;
+}
+
+#zona-centro{
+    float: left;
+    height: 1050px;
+}
