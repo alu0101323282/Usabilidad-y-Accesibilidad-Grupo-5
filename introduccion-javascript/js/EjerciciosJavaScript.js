@@ -13,7 +13,8 @@ function informePaginaInicio() {
     window.alert(`Informe página de inicio:\n  Número de párrafos: ${p}\n  Número de elementos de lista: ${li}\n  Número de cajas: ${div}`);      
 }
 
-//Ejercicio 4
+//Ejercicio 4. El json debe estar en el propio código, inicializando una variable, porque
+//si no fuera así habría que obtener los datos desde un servidor externo.
 function calcularPrecioCompra(cliente) {
   let precioTotal = 0;
   let descuento = 100 - cliente.descuento;
