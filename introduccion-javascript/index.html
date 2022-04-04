@@ -130,8 +130,58 @@
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script language="JavaScript">
           textoTarjeta();
-          informePaginaInicio()
+          informePaginaInicio();
+           calcularPrecioCompra(cliente1);
+          calcularPrecioCompra(cliente2)
           </script>        
-          <script src="js/EjerciciosJavaScript.js" type="text/javascript"></script>
+         const cliente1 = JSON.parse('{
+  "nombre": "Juan",
+  "nacimiento":"la laguna",
+  "dni": "78654268B",
+  "numerocuenta": 20165687,
+  "modalidadpago": 0,
+  "descuento": 20,
+  "productosactual": [
+      {
+          "nombreproducto": "papas",
+          "precioproducto": 5 
+      },
+    {
+        "nombreproducto": "agua",
+        "precioproducto": 2
+    },
+    {
+        "nombreproducto": "fruta",
+        "precioproducto": 4
+    }
+  ]
+
+}');
+     const cliente2 = JSON.parse('{
+  "nombre": "Juan",
+  "nacimiento":"la laguna",
+  "dni": "78654268B",
+  "numerocuenta": 20165687,
+  "modalidadpago": 0,
+  "descuento": 20,
+  "productosactual": [
+      {
+          "nombreproducto": "papas",
+          "precioproducto": 5 
+      },
+    {
+        "nombreproducto": "agua",
+        "precioproducto": 2
+    },
+    {
+        "nombreproducto": "fruta",
+        "precioproducto": 4
+    }
+  ]
+
+}');
+       
+       
+          
     </body>
 </html>
