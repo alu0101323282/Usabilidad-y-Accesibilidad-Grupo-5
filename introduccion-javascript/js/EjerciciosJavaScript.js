@@ -18,12 +18,10 @@ function calcularPrecioCompra(cliente) {
   cliente.productosactual.forEach(p => {
     precioTotal += p;
   });
-  precioTotal = precioTotal * descuento/100;
-}function calcularPrecioCompra(cliente) {
-  let precioTotal = 0;
-  let descuento = 100 - cliente.descuento;
-  cliente.productosactual.forEach(p => {
-    precioTotal += p;
-  });
-  precioTotal = precioTotal * descuento/100;
+  return precioTotal = precioTotal * descuento/100;
 }
+
+function mostrarImporteCompra(precio, metodoPago) {
+    window.alert(`Importe de compra: ${precio}\nFecha de pago: ${metodoPago ? Date(): Date() + 30}`);
+}
+
