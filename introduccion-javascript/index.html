@@ -131,57 +131,8 @@
         <script language="JavaScript">
           textoTarjeta();
           informePaginaInicio();
-           calcularPrecioCompra(cliente1);
-          calcularPrecioCompra(cliente2)
-          </script>        
-         const cliente1 = JSON.parse('{
-  "nombre": "Juan",
-  "nacimiento":"la laguna",
-  "dni": "78654268B",
-  "numerocuenta": 20165687,
-  "modalidadpago": 0,
-  "descuento": 20,
-  "productosactual": [
-      {
-          "nombreproducto": "papas",
-          "precioproducto": 5 
-      },
-    {
-        "nombreproducto": "agua",
-        "precioproducto": 2
-    },
-    {
-        "nombreproducto": "fruta",
-        "precioproducto": 4
-    }
-  ]
-
-}');
-     const cliente2 = JSON.parse('{
-  "nombre": "Maria",
-  "nacimiento":"la laguna",
-  "dni": "78654268B",
-  "numerocuenta": 20165687,
-  "modalidadpago": 0,
-  "descuento": 20,
-  "productosactual": [
-      {
-          "nombreproducto": "papas",
-          "precioproducto": 5 
-      },
-    {
-        "nombreproducto": "agua",
-        "precioproducto": 2
-    },
-    {
-        "nombreproducto": "fruta",
-        "precioproducto": 4
-    }
-  ]
-
-}');
-       
-       
-          
+          mostrarImporteCompra(calcularPrecioCompra(cliente1), cliente1.modalidadpago);
+          mostrarImporteCompra(calcularPrecioCompra(cliente2), cliente2.modalidadpago);
+          </script>                 
     </body>
 </html>
