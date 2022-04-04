@@ -10,3 +10,11 @@ function informePaginaInicio() {
     let div = document.getElementsByTagName('div').length;
     window.alert(`Informe página de inicio:\n  Número de párrafos: ${p}\n  Número de elementos de lista: ${li}\n  Número de cajas: ${div}`);      
 }
+function calcularPrecioCompra(cliente) {
+  let precioTotal = 0;
+  let descuento = 100 - cliente.descuento;
+  cliente.productosactual.forEach(p => {
+    precioTotal += p;
+  });
+  precioTotal = precioTotal * descuento/100;
+}
