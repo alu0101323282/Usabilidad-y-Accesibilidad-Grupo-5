@@ -1,0 +1,32 @@
+{
+    "clientes":[
+        {
+            "nombre": "Thomas",
+            "apellido": "Muller",
+            "telefono": "123456789",
+            "nacionalidad": "Alemania",
+            "edad": 25
+        },
+        {
+            "nombre": "José",
+            "apellido": "Hernandez",
+            "telefono": "987654321",
+            "nacionalidad": "Francia",
+            "edad": 16
+        },
+        {
+            "nombre": "Noe",
+            "apellido": "Hernandez",
+            "telefono": "456789123",
+            "nacionalidad": "Rusia",
+            "edad": 37
+        },
+        {
+            "nombre": "Antonio",
+            "apellido": "Hernandez",
+            "telefono": "456123789",
+            "nacionalidad": "Italia",
+            "edad": 10
+        }
+    ]
+}
