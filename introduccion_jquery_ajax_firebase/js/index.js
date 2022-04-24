@@ -19,7 +19,7 @@ const formulario = document.getElementById('formulario');   //Obtenemos la infor
 
 
 formulario.addEventListener('submit',(e)=>{
-  e.preventDefault();   //Utilizamos esta funcion para evitar que la pagina se recarge al pulsar el boton submit
+ // e.preventDefault();   //Podemos usar esta funcion para evitar que la pagina se recarge al pulsar el boton submit
   console.log(formulario)
 
   const nombre=formulario['first_name'];

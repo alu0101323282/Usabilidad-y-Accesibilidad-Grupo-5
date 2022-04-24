@@ -15,9 +15,10 @@ function cargarDatos(){
                 }
             });      
         });
-        if(!encontrado) {
+       /*  if(!encontrado) {
             $("#respuesta").html('Cliente no encontrado');
-        }
+        } */
+
     });
 }
 
