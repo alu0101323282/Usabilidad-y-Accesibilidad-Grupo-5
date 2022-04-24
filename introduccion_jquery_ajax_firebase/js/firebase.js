@@ -1,63 +1,29 @@
 // Import the functions you need from the SDKs you need
-
-import { initializeApp } from "firebase/app";
-
-import { getAnalytics } from "firebase/analytics";
-
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+import { getFirestore, collection, addDoc,doc, getDoc, updateDoc} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"     //Importamos SDK de Firebase JS (de CDN) En concreto la libreria Cloud Firestore
 // TODO: Add SDKs for Firebase products that you want to use
-
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-
 // Your web app's Firebase configuration
-
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
 const firebaseConfig = {
-
-  apiKey: "AIzaSyDCZe7_OnjsRFB6iwvhTShu49c2LWTGx2w",
-
-  authDomain: "uya-definitivo.firebaseapp.com",
-
-  databaseURL: "https://uya-definitivo-default-rtdb.europe-west1.firebasedatabase.app",
-
-  projectId: "uya-definitivo",
-
-  storageBucket: "uya-definitivo.appspot.com",
-
-  messagingSenderId: "525072438633",
-
-  appId: "1:525072438633:web:ee1263a3fe765240c199f8",
-
-  measurementId: "G-RG8P2JDDFS"
-
+  apiKey: "AIzaSyAv3pLJyuZDam_igF4beIJS2G7NV9t72nM",
+  authDomain: "fir-javascript-b7b77.firebaseapp.com",
+  projectId: "fir-javascript-b7b77",
+  storageBucket: "fir-javascript-b7b77.appspot.com",
+  messagingSenderId: "477006593010",
+  appId: "1:477006593010:web:d8a386f776ad192a4ac96b"
 };
 
+const app= initializeApp(firebaseConfig);
 
-// Initialize Firebase
+const db= getFirestore();
 
-const app = initializeApp(firebaseConfig);
+export const saveUser= (nombre,apellido,telefono) => {
 
-const analytics = getAnalytics(app);
+  addDoc(collection(db, 'users'),{nombre, apellido, telefono})
 
-import { getDatabase } from "firebase/database";
-
-const database = getDatabase();
-
-import { getDatabase, ref, set } from "firebase/database";
-
-document.getElementById('formulario').addEventListener('submit',writeUserData);
-
-function writeUserData() {
-  let nombre = document.getElementById('first_name').value;
-    let apellido = document.getElementById('last_name').value;
-    let telefono = document.getElementById('phone_number').value;
-
-  const db = getDatabase();
-  set(ref(db, 'users/' + userId), {
-    username: nombre,
-    email: apellido,
-    profile_picture : telefono
-  });
 }
+
+export const getUser = (id)=> getDoc(doc(db, 'users', id));   //exportamos 
+export const updateUser =(id, newfields)=> updateDoc(doc(db, 'users',id),newfields)
 
