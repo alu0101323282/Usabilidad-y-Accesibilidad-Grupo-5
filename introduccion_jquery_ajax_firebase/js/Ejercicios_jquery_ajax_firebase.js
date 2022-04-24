@@ -9,9 +9,9 @@ function cargarDatos(){
                 if ((cliente.nombre.toString() === name) && (cliente.apellido.toString() === lastname) &&
                 (cliente.telefono === phoneNumber)) {
                     encontrado = true;
-                    $("#respuesta").html('Nombre completo: ' + cliente.nombre.concat("\n") + ' ' + cliente.apellido +
-                      'Número de teléfono: ' + cliente.telefono + ' ' + 'Nacionalidad: ' + cliente.nacionalidad +
-                    ' '+'Edad: '+ cliente.edad)
+                    $("#respuesta").html('Nombre completo: ' + cliente.nombre + ' ' + cliente.apellido +
+                      ' Número de teléfono: ' + cliente.telefono + ' Nacionalidad: ' + cliente.nacionalidad +
+                      ' Edad: '+ cliente.edad)
                 }
             });      
         });
