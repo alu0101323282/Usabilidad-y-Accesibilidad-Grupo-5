@@ -1,0 +1,18 @@
+Páginas:
+-Página de Inicio
+-Inicio de Sesión
+-Registro
+-Perfil
+-Tienda con los productos
+-Producto en concreto
+-Página de contacto
+
+
+Informes:
+-Explicación del proyecto y las acciones que hayan llevado a cabo respecto a la accesibilidad y usabilidad 
+-Informe de  usos del sitio a través lectores de pantalla (Screen Reader)
+-Si se usan checklist como base para la justificación de la accesibilidad y/o usabilidad se deben incluir los checklist que se utilicen como anexo en los informes.
+-Prubas de ususario
+-Conclusiones
+-Informe reuniones del grupo en el que se reflejen las decisiones de reparto de tareas
+
