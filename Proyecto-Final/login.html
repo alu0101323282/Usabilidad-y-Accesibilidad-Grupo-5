@@ -9,7 +9,6 @@
       <!--Let browser know website is optimized for mobile-->
       <script src="jquery/jquery-3.6.0.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <script src="js/EjerciciosJavaScript.js" type="text/javascript"></script>
     </head>
     <body>
       <div id="cabecera">
@@ -52,14 +51,14 @@
                     <div class="row">
                       <div class="input-field col s6">
                         <i class="material-icons prefix">mail_outline</i>
-                        <input class="validate" id="email" type="email">
+                        <input class="validate" id="log-in-email" type="email">
                         <label for="email" data-error="wrong" data-success="right">Email</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s6">
                         <i class="material-icons prefix">lock_outline</i>
-                        <input id="password" type="password">
+                        <input id="log-in-password" type="password">
                         <label for="password">Contraseña</label>
                       </div>
                     </div>
@@ -68,16 +67,17 @@
                     </div>
                     <div class="row">
                       <div class="input-field col s6">
-                        <a href="#" class="btn waves-effect waves-light col s6">Iniciar Sesión</a>
+                        <button id="log-in-boton" class="btn btn-large btn-register waves-effect waves-light grey lighten-3"  name="action">Iniciar sesión
+                          <i class="material-icons right">done</i>
+                        </button>
+                        <p class="hide" id="error-log-in">Error: Correo o contraseña incorrectos</p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="input-field col s6 m6 l6">
-                        <p class="margin medium-small"><a href="#">Registrarse</a></p>
-                      </div>
-                       
+                      <div class="input-field col s6">
+                        <a href="signup.html" class="btn btn-large btn-register waves-effect waves-light">Registrarse</a>
+                      </div>   
                     </div>
-            
                   </form>
               </div> </body>   
          
@@ -108,14 +108,33 @@
         </footer>
       </div>
       <!--JavaScript at end of body for optimized loading-->
-      <script type="module" src="/introduccion_jquery_ajax_firebase/js/index.js"></script>
-      <script type="module" src="/introduccion_jquery_ajax_firebase/js/firebase.js"></script>
+      <script type="module" src="/Proyecto-Final/js/firebase-login.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/EjerciciosJavaScript.js"></script>
-      <script type="text/javascript" src="js/Ejercicios_jquery_ajax_firebase.js"></script>
       <script language="javascript">
-        cargarDatos();
-      </script>        
+      </script>
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyB287HKSMIQCqshWHKQ-RsKZbwZQ2QPcQA",
+          authDomain: "ullwear-f473d.firebaseapp.com",
+          projectId: "ullwear-f473d",
+          storageBucket: "ullwear-f473d.appspot.com",
+          messagingSenderId: "453993810232",
+          appId: "1:453993810232:web:c56161e18438cd7bcd19cd",
+          measurementId: "G-B3W1DZDVR4"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>     
     </body>
 </html>
 
