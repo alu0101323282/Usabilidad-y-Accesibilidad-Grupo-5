@@ -1,6 +1,6 @@
 <html lang="es">
     <head>
-      <title>Ullwear</title>
+    <title>Perfil</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Add icon library -->
@@ -14,7 +14,7 @@
     </head>
     <body>
       <div id="cabecera" role="heading">
-        <nav class="white nav-extended" role="menubar">
+        <nav class="white nav-extended" role="menubar" aria-dropeffect=”move-carousel”>
           <div class="nav-wrapper">
             <a href="index.html" class="brand-logo" role="link" aria-live=“assertive”>Ullwear</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -41,66 +41,68 @@
           <div class="grey lighten-3 nav-wrapper">
             <div class="col s12">
               <a href="index.html" class="breadcrumb" role="link"  aria-live=“assertive”>Inicio</a>
+              <a href="perfil.html" class="breadcrumb" role="link"  aria-live=“assertive”>Mi perfil</a>
             </div>
           </div>
         </nav>
       </div>
       <div id="zona-centro" role="Section">
-        <div id="carrusel" role="Widget" aria-drageffect=”move-carousel”>
-          <div class="carousel carousel-slider center">
-            <div class="carousel-item" href="#one!">
-              <img src="images/man-banner.jpg" alt="Banner moda hombre">
-              <div class="carousel-fixed-item center">
-                <a class="waves-effect waves-light btn tab-btn" role="link" tabindex="0" aria-live=“assertive”>Moda Hombre</a>
+        <div id="perfil">
+            <div class="container">
+              <div class="row">
+                  <div class="col s12">
+                    <h1><i alt="Icono de perfil" class="large material-icons">account_circle</i> Mi perfil</h1>
+                  </div>
+              </div>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input disabled id="nombre" type="text" class="validate">
+                      <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input disabled id="apellidos" type="text" class="validate">
+                      <label for="apellidos">Apellidos</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <input disabled id="sexo" type="text" class="validate">
+                        <label for="sexo">Sexo</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input disabled id="edad" type="text" class="validate">
+                      <label for="edad">Edad</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <input disabled id="pais" type="text" class="validate">
+                        <label for="edad">País</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input disabled id="codigo-postal" type="number" class="validate">
+                      <label for="edad">Código postal</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input disabled id="email" type="email" class="validate">
+                      <label for="email">Correo electrónico</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input disabled id="contraseña" type="password" class="validate">
+                      <label for="contraseña">Contraseña</label>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="carousel-item" href="#two!">
-              <img src="images/women-banner.jpg" alt="Banner moda mujer">
-              <div class="carousel-fixed-item center">
-                <a class="waves-effect waves-light btn tab-btn" role="link" tabindex="0" aria-live=“assertive”>Moda Mujer</a>
-              </div>
-            </div>
-            <div class="carousel-item" href="#three!">
-              <img src="images/kids-banner.jpg" alt="Banner moda niño">
-              <div class="carousel-fixed-item center">
-                <a id="kids-banner" class="waves-effect waves-light btn tab-btn" role="link" tabindex="0" aria-live=“assertive”>Moda Niño</a>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="container" role="Section">
-          <div class="row">
-            <div class="col s12 l6" role="text">
-              <p id="conocenos">Conócenos</p>
-              <p id="conocenos-desc" align="justify">
-                Ullwear es una de las principales empresas de moda internacional. Pertenece a Inditex, uno de los mayores grupos de distribución del mundo.
-                El cliente es el centro de nuestro particular modelo de negocio, que integra diseño, fabricación, distribución y venta, a través de una amplia red de tiendas propia.         
-              </p>
-              <p> 
-                Más información en la web corporativa del grupo Inditex: www.inditex.com
-              </p>
-            </div>
-            <div class="col s12 l6" role="img">
-              <img src="images/shop.jpg" alt="Tienda de ropa" class="responsive" aria-labelledby="conocenos" aria-describedby=”conocenos-desc”>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 l6" role="img">
-              <img src="images/summer-sales.jpg" lang="en" alt="Rebajas de verano" class="responsive"  aria-labelledby=”novedades” aria-describedby=”novedades-desc”>
-            </div>
-            <div class="col s12 l6" role="text">
-              <p id="novedades">Novedades</p>
-              <p id="novedades-desc" align="justify">
-                Descubre las últimas novedades en moda de hombre, mujer y niño para la temporada de verano, con descuentos
-                de hasta el 30% en una selección de productos.
-              </p>
-              <p> 
-                Promoción válida hasta el 31 de agosto.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> 
       <div id="pie-pagina" role="Section">
         <footer class="white page-footer">
           <div class="container">
@@ -142,4 +144,3 @@
       </script>        
     </body>
 </html>
-

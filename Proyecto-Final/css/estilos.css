@@ -7,6 +7,21 @@
     background-color: #eeeeee;
 }
 
+
+
+#cabecera li a:visited {
+    background-color: #eeeeee;
+}
+
+#cabecera li a:focus-visible {
+    border: 3px solid black;
+}
+
+i:focus-visible {
+    border: 3px solid black;
+}
+
+
 a.brand-logo {
     margin-left: 1em;
     font-size: 3em;
@@ -24,5 +39,44 @@ a.breadcrumb {
 #pie-pagina a {
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#zona-centro a, p{
+    color: black;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#zona-centro a:hover{
+    background-color: #eeeeee;
+}
+
+#carrusel {
+    margin-bottom: 1em;
+}
+
+#conocenos, #novedades {
+    font-size: 2em
+}
+
+#perfil {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+a.tab-btn:focus {
+    outline: none;
+}
+a.tab-btn:focus-visible {
+    outline: 3px solid black; /* That'll show 'em */
+}
+
+.breadcrumb:before {
+    color: black;
 }
 
