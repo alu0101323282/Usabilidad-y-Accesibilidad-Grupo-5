@@ -24,8 +24,33 @@ formulario.addEventListener('submit',(e)=>{
 
   const nombre=formulario['first_name'];
   const apellido=formulario['last_name'];
-  const telefono=formulario['phone_number'];
+  const email=formulario['email'];
 
-  saveUser(nombre.value, apellido.value, telefono.value)
+  saveUser(nombre.value, apellido.value, email.value)
 
 })
+
+
+
+function cargarDatos(){  
+  $("#boton").click(function(){
+      var encontrado = false;
+      var name = $("#first_name").val();
+      var lastname = $("#last_name").val();
+      var email = $("#email").val();
+      $.get( 'data.json', function(datos){
+          datos.clientes.forEach(cliente => {
+              if ((cliente.nombre.toString() === name) && (cliente.apellido.toString() === lastname) &&
+              (cliente.email.toString() === email)) {
+                  encontrado = true;
+                  $("#respuesta").html('Nombre completo: ' + cliente.nombre + ' ' + cliente.apellido +
+                    ' Email: ' + cliente.email) 
+              }
+          });      
+      });
+     /*  if(!encontrado) {
+          $("#respuesta").html('Cliente no encontrado');
+      } */
+
+  });
+}

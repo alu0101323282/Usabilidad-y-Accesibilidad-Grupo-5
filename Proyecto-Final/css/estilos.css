@@ -1,0 +1,28 @@
+#cabecera a {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#cabecera li a:hover {
+    background-color: #eeeeee;
+}
+
+a.brand-logo {
+    margin-left: 1em;
+    font-size: 3em;
+}
+
+a.breadcrumb {
+    margin-left: 1em;
+}
+
+#pie-pagina div.container {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#pie-pagina a {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+

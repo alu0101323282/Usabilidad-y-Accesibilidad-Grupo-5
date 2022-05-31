@@ -1,8 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getFirestore, collection, addDoc,doc, getDoc, updateDoc} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"     //Importamos SDK de Firebase JS (de CDN) En concreto la libreria Cloud Firestore
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -17,13 +18,29 @@ const firebaseConfig = {
 const app= initializeApp(firebaseConfig);
 
 const db= getFirestore();
+const auth = getAuth(app);
 
-export const saveUser= (nombre,apellido,telefono) => {
+export const saveUser= (nombre,apellido,email,password) => {
 
-  addDoc(collection(db, 'users'),{nombre, apellido, telefono})
+  addDoc(collection(db, 'Usuarios'),{nombre, apellido, email, password})
 
 }
 
-export const getUser = (id)=> getDoc(doc(db, 'users', id));   //exportamos 
-export const updateUser =(id, newfields)=> updateDoc(doc(db, 'users',id),newfields)
+export const getUser = (id)=> getDoc(doc(db, 'Usuarios', id));   //exportamos 
+export const updateUser =(id, newfields)=> updateDoc(doc(db, 'Usuarios',id),newfields)
+
+
+
+
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
 
