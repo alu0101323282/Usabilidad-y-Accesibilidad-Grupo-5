@@ -26,7 +26,7 @@ const usersRef = collection(db, 'users');
 
 export const saveUser = async (userId, name, surname, email, password, sex, birthday, country, postcode) => {
   await setDoc(doc(usersRef, userId),{name, surname, email, password, sex, birthday, country, postcode});
-  return window.location.href="/Proyecto-Final/login.html";
+  return window.location.href="./login.html";
 }
 
 const txtEmail = document.getElementById('email');
