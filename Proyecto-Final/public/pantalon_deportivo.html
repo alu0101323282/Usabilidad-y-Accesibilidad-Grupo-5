@@ -6,7 +6,7 @@
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link media="screen" href="css/estilos.css" type="text/css" rel="stylesheet">
+      <link media="screen" href="css/estilos2.css" type="text/css" rel="stylesheet">
       <!--Let browser know website is optimized for mobile-->
       <script src="jquery/jquery-3.6.0.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,32 +15,32 @@
       <div id="cabecera" role="heading">
         <nav class="white nav-extended" role="menubar">
           <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo"  role="link" aria-live=“assertive”>Ullwear</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"  role="link" aria-live=“assertive”><i class="material-icons">menu</i></a>
+            <a href="index.html" class="brand-logo" tabindex="0" aria-label="Ullwear logo" role="link" aria-live=“assertive”>Ullwear</a>
+            <a href="#" data-target="mobile-demo" tabindex="0" class="sidenav-trigger"  role="link" aria-live=“assertive”><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down" role="list">
-              <li><a id="op1" href="login.html" role="link" aria-live=“assertive”>Iniciar sesión</a></li>
-              <li><a id="op2" href="signup.html" role="link" aria-live=“assertive”>Registrarse</a></li>
+              <li><a id="op1" href="login.html" tabindex="0" role="link" aria-live=“assertive”>Iniciar sesión</a></li>
+              <li><a id="op2" href="signup.html" tabindex="0" role="link" aria-live=“assertive”>Registrarse</a></li>
             </ul>
           </div>
           <ul class="sidenav" id="mobile-demo" role="list">
-            <li><a id="op1" href="login.html" role="link" tabindex="-1" aria-live=“assertive”>Iniciar sesión</a></li>
-            <li><a id="op2" href="signup.html" role="link" tabindex="-1" aria-live=“assertive”>Registrarse</a></li>
+            <li><a id="op1" href="login.html" role="link" aria-label="Iniciar sesión" tabindex="-1" aria-live=“assertive”>Iniciar sesión</a></li>
+            <li><a id="op2" href="signup.html" role="link" aria-label="Registrarse" tabindex="-1" aria-live=“assertive”>Registrarse</a></li>
           </ul>
           <div class="nav-content">
             <ul class="tabs tabs-transparent">
-              <li class="tab"><a href="moda_hombre.html" role="link" aria-live=“assertive”>Hombre</a></li>
-              <li class="tab"><a href="#test2" role="link" aria-live=“assertive”>Mujer</a></li>
-              <li class="tab"><a href="#test3" role="link" aria-live=“assertive”>Niño</a></li>
+              <li class="tab"><a href="moda_hombre.html" aria-label="Moda hombre" tabindex="0" role="link" aria-live=“assertive”>Hombre</a></li>
+              <li class="tab"><a href="#test2" role="link" aria-label="Moda mujer" tabindex="0" aria-live=“assertive”>Mujer</a></li>
+              <li class="tab"><a href="#test3" role="link" aria-label="Moda niño" tabindex="0" aria-live=“assertive”>Niño</a></li>
             </ul>
           </div>
         </nav>
         <nav>
           <div class="grey lighten-3 nav-wrapper">
             <div class="col s12">
-              <a href="index.html" class="breadcrumb">Inicio</a>
-              <a href="moda_hombre.html" class="breadcrumb" role="link" tabindex="0"> Moda Hombre </a>
-              <a href="pantalones_hombre.html" class="breadcrumb" role="link" tabindex="0"> Pantalones Deportivos </a>
-              <a href="pantalon_deportivo.html" class="breadcrumb" role="link" tabindex="0"> Pantalon negro chándal </a>
+              <a href="index.html" aria-label="Migas de pan. Página de inicio" class="breadcrumb">Inicio</a>
+              <a href="moda_hombre.html" aria-label="Moda hombre" class="breadcrumb" role="link" tabindex="0"> Moda Hombre </a>
+              <a href="pantalones_hombre.html" aria-label="Pantalones Deportivos" class="breadcrumb" role="link" tabindex="0"> Pantalones Deportivos </a>
+              <a href="pantalon_deportivo.html" aria-label="Pantlón negro chándal" class="breadcrumb" role="link" tabindex="0"> Pantalon negro chándal </a>
             </div>
           </div>
         </nav>
@@ -54,11 +54,12 @@
              <div class="col s8"> 
               <div class="card-big">
                 <div class="card-image-big">
-                  <img rol="img" src="images/pant_dep.jpeg">
+                  <img tabindex="0" aria-label="Imagen de pantalón deportivo negro" rol="img" src="images/pant_dep.jpeg">
                 </div>
-                <div class="card-content">
-                  <h5>Descripción</h5>
-                  <p>Un pantalón cómodo perfecto para practicar deporte o simplemente para estar cómodo en casa.<br>
+                <div class="card-content" tabindex="0">
+                  <h5>Descripción.</h5>
+                  <p>Es un pantalón cómodo perfecto para practicar deporte o simplemente para estar cómodo en casa.<br> 
+                      Características:<br>
                     - Pantalón de felpa perchada<br>
                     - 70% algodón procedente de la agricultura ecológica<br>
                     - Cintura elástica + cordón ajustable bajo jareta<br>
@@ -75,33 +76,33 @@
             </div>
             
             <div class="col s4"> 
-              <div class="card-prices">
+              <div class="card-prices" tabindex="0">
                <h5>Pantalón negro chándal<br>19.99€</h5>
                 <div class="menu-talla">
-                  <form action="#">
+                  <form action="#" tabindex="0">
                     <span>Tallas.</span>
                     <p>
-                      <label>
+                      <label tabindex="0">
                         <input class="with-gap" name="group1" type="radio" />
-                        <span>S</span>
+                        <span  aria-label="Talla S">S</span>
                       </label>
                     </p>
                     <p>
-                      <label>
+                      <label tabindex="0">
                         <input class="with-gap" name="group1" type="radio" />
-                        <span>M</span>
+                        <span  aria-label="Talla M">M</span>
                       </label>
                     </p>
                     <p>
-                      <label>
+                      <label tabindex="0">
                         <input class="with-gap" name="group1" type="radio"  />
-                        <span>L</span>
+                        <span  aria-label="Talla L">L</span>
                       </label>
                     </p>
                     <p>
-                      <label>
+                      <label tabindex="0">
                         <input class="with-gap" name="group1" type="radio" />
-                        <span>XL</span>
+                        <span  aria-label="Talla XL">XL</span>
                       </label>
                     </p>
                   </form>
@@ -114,17 +115,17 @@
               <div class="col s9">
               <div class="extrainfo">
               <div class="button-list">
-                <button class="#00000 waves-effect waves-light">
+                <button tabindex="0"  aria-label="Botón de comprar" class="#00000 waves-effect waves-light">
                   <i class="material-icons right">shopping_bag</i>
                   Comprar</button>
-                <button class="#00000 waves-effect waves-light">
+                <button tabindex="0"  aria-label="Botón de Like" class="#00000 waves-effect waves-light">
                   <i class="material-icons right">favorite</i>
                   Like</button>
-                <button class="#00000 waves-effect waves-light">
+                <button tabindex="0"  aria-label="Lista de deseos" class="#00000 waves-effect waves-light">
                   <i class="material-icons right">list</i>
                   Lista de deseos</button>
               </div>
-              <div class="info">
+              <div tabindex="0" class="info">
                 <p>
                   Envío gratis en compras superiores a 25€
                 </p>
@@ -145,10 +146,10 @@
               <div class="col l6 s12">
                 <h5>Más información:</h5>
                 <ul>
-                  <li><a href="#!" role="link" aria-live=“assertive”>Soporte</a>
-                  <a href="#!" role="link" aria-live=“assertive”>Contacto</a>
-                  <a href="#!" role="link" aria-live=“assertive”>Aviso legal</a>
-                  <a href="#!" role="link" aria-live=“assertive”>Accesibilidad</a></li>
+                  <li><a href="#!" tabindex="0" aria-label="Soporte" role="link" aria-live=“assertive”>Soporte</a>
+                    <a href="#!" tabindex="0" aria-label="Contacto" role="link" aria-live=“assertive”>Contacto</a>
+                    <a href="#!" tabindex="0" aria-label="Aviso legal" role="link" aria-live=“assertive”>Aviso legal</a>
+                    <a href="#!" tabindex="0" aria-label="Accesibilidad" role="link" aria-live=“assertive”>Accesibilidad</a></li>
                 </ul>
               </div>
             </div>
@@ -168,7 +169,7 @@
           <li><a class="btn-floating grey" alt="Facebook" role="link"><i class="fa fa-facebook" tabindex="0" aria-live=“assertive” aria-label=”facebook”></i></a></li>
           <li><a class="btn-floating grey" alt="Twitter" role="link"><i class="fa fa-twitter" tabindex="0" aria-live=“assertive” aria-label=twitter></i></a></li>
           <li><a class="btn-floating grey" alt="Youtube" role="link"><i class="fa fa-youtube" tabindex="0" aria-live=“assertive” aria-label=youtube></i></a></li>
-          <li><a class="btn-floating grey" alt="Instagram" role="link"><i class="fa fa-instagram" tabindex="0" aria-live=“assertive” aria-label=instragram></i></a></li>
+          <li><a class="btn-floating grey" alt="Instagram" role="link"><i class="fa fa-instagram" tabindex="0" aria-live=“assertive” aria-label=instagram></i></a></li>
         </ul>
       </div>
       <!--JavaScript at end of body for optimized loading-->
