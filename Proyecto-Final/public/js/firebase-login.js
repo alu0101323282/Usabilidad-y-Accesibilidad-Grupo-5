@@ -60,7 +60,7 @@ const actualizarPerfil = async (userId) => {
       await localStorage.setItem('codigo-postal', user.postcode);
       await localStorage.setItem('correo', user.email);
       await localStorage.setItem('contraseña', user.password);
-      return window.location.href = '/Proyecto-Final/index.html';
+      return window.location.href = '/Proyecto-Final/public/index.html';
     } else {
       // doc.data() will be undefined in this case
       console.log("No such document!");
