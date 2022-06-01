@@ -1,0 +1,9 @@
+console.log(localStorage.getItem('nombre'));
+$('#nombre').val(localStorage.getItem('nombre'));
+$('#apellidos').val(localStorage.getItem('apellidos'));
+$('#sexo').val(localStorage.getItem('sexo'));
+$('#pais').val(localStorage.getItem('pais'));
+$('#birthday').val(localStorage.getItem('birthday'));
+$('#codigo-postal').val(localStorage.getItem('codigo-postal'));
+$('#correo').val(localStorage.getItem('correo'));
+$('#password').val(localStorage.getItem('contraseña'));
