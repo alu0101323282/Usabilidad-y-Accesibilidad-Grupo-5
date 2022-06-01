@@ -6,7 +6,7 @@
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link media="screen" href="css/estilos.css" type="text/css" rel="stylesheet">
+      <link media="screen" href="css/estilos2.css" type="text/css" rel="stylesheet">
       <!--Let browser know website is optimized for mobile-->
       <script src="jquery/jquery-3.6.0.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,31 +15,31 @@
       <div id="cabecera" role="heading">
         <nav class="white nav-extended" role="menubar">
           <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo"  role="link" aria-live=“assertive”>Ullwear</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"  role="link" aria-live=“assertive”><i class="material-icons">menu</i></a>
+            <a href="index.html" class="brand-logo" tabindex="0" aria-label="Ullwear" role="link" aria-live=“assertive”>Ullwear</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger" aria-label="Menú" tabindex="0"  role="link" aria-live=“assertive”><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down" role="list">
-              <li><a id="op1" href="login.html" role="link" aria-live=“assertive”>Iniciar sesión</a></li>
-              <li><a id="op2" href="signup.html" role="link" aria-live=“assertive”>Registrarse</a></li>
+              <li><a id="op1" href="login.html" tabindex="0" role="link" aria-label="Iniciar sesión" aria-live=“assertive”>Iniciar sesión</a></li>
+              <li><a id="op2" href="signup.html" tabindex="0" role="link" aria-label="Registrarse" aria-live=“assertive”>Registrarse</a></li>
             </ul>
           </div>
           <ul class="sidenav" id="mobile-demo" role="list">
-            <li><a id="op1" href="login.html" role="link" tabindex="-1" aria-live=“assertive”>Iniciar sesión</a></li>
-            <li><a id="op2" href="signup.html" role="link" tabindex="-1" aria-live=“assertive”>Registrarse</a></li>
+            <li><a id="op1" href="login.html" aria-label="Iniciar sesión" role="link" tabindex="-1" aria-live=“assertive”>Iniciar sesión</a></li>
+            <li><a id="op2" href="signup.html" aria-label="Registrarse" role="link" tabindex="-1" aria-live=“assertive”>Registrarse</a></li>
           </ul>
           <div class="nav-content">
             <ul class="tabs tabs-transparent">
-              <li class="tab"><a href="moda_hombre.html" role="link" aria-live=“assertive”>Hombre</a></li>
-              <li class="tab"><a href="#test2" role="link" aria-live=“assertive”>Mujer</a></li>
-              <li class="tab"><a href="#test3" role="link" aria-live=“assertive”>Niño</a></li>
+              <li class="tab"><a href="moda_hombre.html" aria-label="Moda Hombre" tabindex="0" role="link" aria-live=“assertive” >Hombre</a></li>
+              <li class="tab"><a href="#test2" tabindex="0" aria-label="Moda Mujer" role="link" aria-live=“assertive” >Mujer</a></li>
+              <li class="tab"><a href="#test3" tabindex="0" aria-label="Moda Niño" role="link" aria-live=“assertive” >Niño</a></li>
             </ul>
           </div>
         </nav>
         <nav>
           <div class="grey lighten-3 nav-wrapper">
             <div class="col s12">
-              <a href="index.html" class="breadcrumb" role="link" tabindex="0">Inicio</a>
-              <a href="moda_hombre.html" class="breadcrumb" role="link" tabindex="0"> Moda Hombre </a>
-              <a href="pantalones_hombre.html" class="breadcrumb" role="link" tabindex="0"> Pantalones Deportivos </a>
+              <a href="index.html" tabindex="0" role="link" aria-label="Página de inicio" aria-live=“assertive” class="breadcrumb">Inicio</a>
+              <a href="moda_hombre.html" tabindex="0" role="link" aria-label="Moda hombre" aria-live=“assertive” class="breadcrumb"> Moda Hombre </a>
+              <a href="pantalones_hombre.html" aria-label="Pantalones deportivos" aria-live=“assertive” class="breadcrumb" role="link" tabindex="0"> Pantalones Deportivos </a>
             </div>
           </div>
         </nav>
@@ -52,30 +52,30 @@
             <div class="col s4">
               <div class="grey lighten-3 card-small">
                 <div class="card-image">
-                  <img rol="img" src="images/pant_dep.jpeg">
+                  <img rol="img" tabindex="0" aria-label="Imagen de Pantalón negro chándal" src="images/pant_dep.jpeg">
                 </div>
                 <div class="card-titlelink">
-                  <a href="pantalon_deportivo.html" role="link" aria-live=“assertive”>Pantalón negro chándal 19.99€</a>
+                  <a href="pantalon_deportivo.html" aria-label="Pantalón negro chándal, precio: 19.99€" tabindex="0" role="link" aria-live=“assertive”>Pantalón negro chándal 19.99€</a>
                 </div>
               </div>
             </div>
             <div class="col s4">
               <div class="grey lighten-3 card-small">
                 <div class="card-image">
-                  <img rol="img" src="images/pant_dep_1.jpg">
+                  <img rol="img" aria-label="Imagen de Pantalón gris chándal" tabindex="0" src="images/pant_dep_1.jpg">
                 </div>
                 <div class="card-titlelink">
-                  <a href="pantalones_hombre.html" title="Pantalones" role="link" aria-live=“assertive”>Pantalón gris chándal 19.99€</a>
+                  <a href="pantalones_hombre.html" aria-label="Pantalón gris chándal, precio: 19.99€" role="link" aria-live=“assertive”>Pantalón gris chándal 19.99€</a>
                 </div>
               </div>
             </div>
             <div class="col s4">
               <div class="grey lighten-3 card-small">
                 <div class="card-image">
-                  <img rol="img" src="images/pant_dep_2.jpg">
+                  <img rol="img" aria-label="Imagen de Pantalón gris custom" tabindex="0" src="images/pant_dep_2.jpg">
                 </div>
                 <div class="card-titlelink">
-                  <a href="pantalones_hombre.html" role="link" aria-live=“assertive”>Pantalón gris custom 24.99€</a>
+                  <a href="pantalones_hombre.html" aria-label="Pantalón gris custom, precio: 24.99€" role="link" aria-live=“assertive”>Pantalón gris custom 24.99€</a>
                 </div>
               </div>
             </div>
@@ -93,12 +93,12 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5>Más información:</h5>
+                <h5 aria-label="Más información:" tabindex="0">Más información:</h5>
                 <ul>
-                  <li><a href="#!" role="link" aria-live=“assertive”>Soporte</a>
-                  <a href="#!" role="link" aria-live=“assertive”>Contacto</a>
-                  <a href="#!" role="link" aria-live=“assertive”>Aviso legal</a>
-                  <a href="#!" role="link" aria-live=“assertive”>Accesibilidad</a></li>
+                  <li><a href="#!" aria-label="Soporte" tabindex="0" role="link" aria-live=“assertive”>Soporte</a>
+                  <a href="#!" aria-label="Contacto" tabindex="0" role="link" aria-live=“assertive”>Contacto</a>
+                  <a href="#!" aria-label="Aviso legal" tabindex="0" role="link" aria-live=“assertive”>Aviso legal</a>
+                  <a href="#!" aria-label="Accesibilidad" tabindex="0" role="link" aria-live=“assertive”>Accesibilidad</a></li>
                 </ul>
               </div>
             </div>
@@ -136,4 +136,3 @@
       </script>        
     </body>
 </html>
-
