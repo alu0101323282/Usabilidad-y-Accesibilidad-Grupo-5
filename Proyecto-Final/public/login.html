@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -8,7 +8,7 @@
       <link media="screen" href="./css/estilos.css" type="text/css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!--Let browser know website is optimized for mobile-->
-      <script src="jquery/jquery-3.6.0.min.js"></script>
+      <script src="./jquery/jquery-3.6.0.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
@@ -47,7 +47,6 @@
         <div class="container">
         <!-- //////////////////////////////////////////-->
         <p style="font-size:40px;">Inicio de sesión</p>
-         <body ng-app="mainModule" ng-controller="mainController">
             <div id="login-page" class="row">
                   <form class="login-form">
                     <div class="row">
@@ -83,7 +82,7 @@
                       </div>   
                     </div>
                   </form>
-              </div> </body>   
+              </div>  
          
        <!-- //////////////////////////////////////////-->
         </div>
@@ -123,10 +122,11 @@
         </ul>
       </div>
       <!--JavaScript at end of body for optimized loading-->
-      <script type="module" src="js/firebase-login.js"></script>
-      <script type="module" src="js/firebase-perfil.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="module" src="js/header.js"></script>  
+      <script type="module" src="./js/firebase-login.js"></script>
+      <script type="module" src="./js/firebase-perfil.js"></script>
+      <script src="./jquery/jquery-3.6.0.js"></script>
+      <script type="text/javascript" src="./js/materialize.min.js"></script>
+      <script type="module" src="./js/header.js"></script>  
       <script language="javascript">
         $('.sidenav').sidenav();
         $('.fixed-action-btn').floatingActionButton();
