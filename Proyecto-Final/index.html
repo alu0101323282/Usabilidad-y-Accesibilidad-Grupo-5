@@ -136,7 +136,28 @@
       <script src="jquery/jquery-3.6.0.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/inicio.js"></script>
-      <script type="module" src="js/header.js"></script>       
+      <script type="module" src="js/header.js"></script>
+      <script language="javascript">
+        $(document).ready(function(){
+          $('select').formSelect();
+        });
+        $(document).ready(function(){
+          $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+          });
+          $('.sidenav').sidenav();
+          $('.fixed-action-btn').floatingActionButton();
+        });
+
+        $('#kids-banner').focus(function() {
+          $('.carousel.carousel-slider').carousel('set', 2);
+        });
+
+        $('#social-media').focus(function() {
+          $('.fixed-action-btn').floatingActionButton('open');
+        });
+      </script>        
     </body>
 </html>
 
