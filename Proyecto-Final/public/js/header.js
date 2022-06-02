@@ -37,4 +37,9 @@ if(localStorage.getItem('login') === 'true') {
     op1.onclick = () => {cerrarSesion();};
     $('#op2').text('Mi Perfil');
     $('#op2').attr('href', 'perfil.html');
+    $('#op3').text('Cerrar sesión');
+    let op3 = document.getElementById('op3');
+    op3.onclick = () => {cerrarSesion();};
+    $('#op4').text('Mi Perfil');
+    $('#op4').attr('href', 'perfil.html');
 }
