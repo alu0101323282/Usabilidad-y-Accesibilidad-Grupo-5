@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<html lang="es">
   <html>
     <head>
+      <title>Inicio Sesión</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -14,10 +16,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-      <div id="cabecera">
+      <div id="cabecera" role="heading">
         <nav class="white nav-extended">
           <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Ullwear</a>
+            <a href="index.html" class="brand-logo" role="link" aria-live=“assertive”>Ullwear</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down" role="list">
               <li><a id="op1" href="login.html" role="link" aria-live=“assertive”>Iniciar sesión</a></li>
@@ -39,17 +41,17 @@
         <nav>
           <div class="grey lighten-3 nav-wrapper">
             <div class="col s12">
-              <a href="index.html" class="breadcrumb">Inicio</a>
-              <a href="login.html" class="breadcrumb">Iniciar sesión</a>
+              <a href="index.html" class="breadcrumb" role="link" aria-live=“assertive”>Inicio</a>
+              <a href="login.html" class="breadcrumb" role="link" aria-live=“assertive”>Iniciar sesión</a>
             </div>
           </div>
         </nav>
       </div>
 
-      <div id="zona-centro">
+      <div id="zona-centro" role="Selection">
         <div class="container">
         <!-- //////////////////////////////////////////-->
-        <p style="font-size:40px;">Inicio de sesión</p>
+        <p style="font-size:40px;" tabindex="0">Inicio de sesión</p>
             <div id="login-page" class="row">
                   <form class="login-form">
                     <div class="row">
@@ -90,17 +92,17 @@
         </div>
       </div>
       
-      <div id="pie-pagina">
+      <div id="pie-pagina" role="Section">
         <footer class="white page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5>Más información:</h5>
+                <h5 tabindex="0" >Más información:</h5>
                 <ul>
-                  <li><a href="#!">Soporte</a>
-                  <a href="#!">Contacto</a>
-                  <a href="#!">Aviso legal</a>
-                  <a href="#!">Accesibilidad</a></li>
+                  <li><a href="#!" role="link" aria-live=“assertive”>Soporte</a>
+                  <a href="#!" role="link" aria-live=“assertive”>Contacto</a>
+                  <a href="#!" role="link" aria-live=“assertive”>Aviso legal</a>
+                  <a href="#!" role="link" aria-live=“assertive”>Accesibilidad</a></li>
                 </ul>
               </div>
             </div>
@@ -135,5 +137,6 @@
         });
       </script>     
     </body>
+  </html>
 </html>
 

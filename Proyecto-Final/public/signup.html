@@ -1,5 +1,6 @@
 <html lang="es">
     <head>
+      <title>Registro</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -13,10 +14,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-      <div id="cabecera">
+      <div id="cabecera" role="heading">
         <nav class="white nav-extended">
           <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Ullwear</a>
+            <a href="index.html" class="brand-logo" role="link" aria-live=“assertive”>Ullwear</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down" role="list">
               <li><a id="op1" href="login.html" role="link" aria-live=“assertive”>Iniciar sesión</a></li>
@@ -38,18 +39,18 @@
         <nav>
           <div class="grey lighten-3 nav-wrapper">
             <div class="col s12">
-              <a href="index.html" class="breadcrumb">Inicio</a>
-              <a href="index.html" class="breadcrumb">Registrarse</a>
+              <a href="index.html" class="breadcrumb" role="link" aria-live=“assertive”>Inicio</a>
+              <a href="index.html" class="breadcrumb" role="link" aria-live=“assertive”>Registrarse</a>
             </div>
           </div>
         </nav>
       </div>
 
-      <div id="zona-centro">
+      <div id="zona-centro" role="Selection">
         <div class="container">
         <!-- //////////////////////////////////////////-->
         <form class="col s12" id="formulario">
-        <p style="font-size:40px;">Registro</p>
+        <p style="font-size:40px;" tabindex="0" >Registro</p>
         <div class="row">
             <div class="row">
               <div class="input-field col s6">
@@ -63,7 +64,7 @@
             </div>
             <div class="row">
               <div class="input-field col s6">
-                  <p>Sexo:</p>
+                  <p tabindex="0">Sexo:</p>
                 <p>
                   <label>
                     <input id="man" name="group1" type="radio" checked />
@@ -77,21 +78,21 @@
                   </label>
                 </p>
               </div>
-                <div class="input-field col s6">
-                  <input id="birthday" type="date" class="validate" min="1925-01-01" max="2004-06-01" required>
-                  <label for="birthday">Fecha de nacimiento</label>
+                <div  aria-label="Fecha de nacimiento" class="input-field col s6">
+                  <input id="birthday" type="date" class="validate" min="1925-01-01" max="2004-06-01"  required>
+                  <label for="birthday" aria-live="" tabindex="0">Fecha de nacimiento</label>
                 </div>
             </div>
             <div class="row">
               <div class="input-field col s6">
                 <div class="input-field col s12">
-                  <select id="pais">
-                    <option value="0" selected>España</option>
-                    <option value="1">Francia</option>
-                    <option value="2">Alemania</option>
-                    <option value="3">Portugal</option>
+                  <select  id="pais" aria-label="País de recidencia" >
+                    <option value="0" selected >España</option>
+                    <option value="1"  tabindex="0">Francia</option>
+                    <option value="2"  tabindex="0">Alemania</option>
+                    <option value="3"  tabindex="0">Portugal</option>
                   </select>
-                  <label for="pais">País</label>
+                  <label  for="pais"  >País</label>
                 </div>
               </div>
               <div class="input-field col s6">
@@ -128,12 +129,12 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5>Más información:</h5>
+                <h5 tabindex="0" >Más información:</h5>
                 <ul>
-                  <li><a href="#!">Soporte</a>
-                  <a href="#!">Contacto</a>
-                  <a href="#!">Aviso legal</a>
-                  <a href="#!">Accesibilidad</a></li>
+                  <li><a href="#!" role="link" aria-live=“assertive”>Soporte</a>
+                    <a href="#!" role="link" aria-live=“assertive”>Contacto</a>
+                    <a href="#!" role="link" aria-live=“assertive”>Aviso legal</a>
+                    <a href="#!" role="link" aria-live=“assertive”>Accesibilidad</a></li>
                 </ul>
               </div>
             </div>
