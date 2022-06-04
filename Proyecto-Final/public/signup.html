@@ -78,15 +78,15 @@
                   </label>
                 </p>
               </div>
-                <div  aria-label="Fecha de nacimiento" class="input-field col s6">
+                <div  aria-label="Fecha de nacimiento" class="input-field col s6" tabindex="0">
                   <input id="birthday" type="date" class="validate" min="1925-01-01" max="2004-06-01"  required>
-                  <label for="birthday" aria-live="" tabindex="0">Fecha de nacimiento</label>
+                  <label for="birthday" >Fecha de nacimiento</label>
                 </div>
             </div>
             <div class="row">
               <div class="input-field col s6">
-                <div class="input-field col s12">
-                  <select  id="pais" aria-label="País de recidencia" >
+                <div class="input-field col s12" tabindex="0" aria-label="País de recidencia">
+                  <select  id="pais">
                     <option value="0" selected >España</option>
                     <option value="1"  tabindex="0">Francia</option>
                     <option value="2"  tabindex="0">Alemania</option>
@@ -117,7 +117,7 @@
             </div>
         </div>
         <div class="input-field col s12">
-          <a id="boton" tabindex="0" class="btn btn-large btn-register waves-effect waves-light"  name="action">Registrarse</a>
+          <a id="boton" tabindex="0"  aria-label="Botón Registrase" class="btn btn-large btn-register waves-effect waves-light"  name="action">Registrarse</a>
           <p class="hide" id="error-sign-in">Error: Datos no válidos</p>
         </form>
         </div>
@@ -129,7 +129,7 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 tabindex="0" >Más información:</h5>
+                <h5 aria-label="Más información:" tabindex="0">Más información:</h5>
                 <ul>
                   <li><a href="#!" role="link" aria-live=“assertive”>Soporte</a>
                     <a href="#!" role="link" aria-live=“assertive”>Contacto</a>
